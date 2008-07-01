@@ -1,0 +1,210 @@
+roadnav
+------------------------------------------
+Roadnav is an open source street navigation solution capable of running 
+on a variety of operating systems. Roadnav uses the free TIGER/Line 
+(Topologically Integrated Geographic Encoding and Referencing) files 
+from the US Census Bureau to build the maps, along with the GNIS state 
+and topical gazetteer data from the USGS to identify locations. It has 
+experimental support for scripting, LCDproc, importing OpenStreetMap 
+data, and importing GPX waypoints and tracks.
+
+Runtime requirements:
+  cygwin-1.5.25-11
+  wx26-base-2.6.4.0-4
+  wx26-gtk2-2.6.4.0-4
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libroadnav-0.19-1
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://roadnav.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/roadnav/
+
+-------------------------------------------
+
+Build instructions:
+  unpack roadnav-0.19-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./roadnav-0.19-X.cygport all
+
+This will create:
+  /usr/src/roadnav-0.19-X-src.tar.bz2
+  /usr/src/roadnav-0.19-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/roadnav.exe
+  /usr/share/doc/roadnav-0.19/AUTHORS
+  /usr/share/doc/roadnav-0.19/COPYING
+  /usr/share/doc/roadnav-0.19/ChangeLog
+  /usr/share/doc/roadnav-0.19/INSTALL
+  /usr/share/doc/roadnav-0.19/README
+  /usr/share/doc/roadnav-0.19/TODO
+  /usr/share/roadnav/abbreviations.txt
+  /usr/share/roadnav/skins/Default-Day/exit.png
+  /usr/share/roadnav/skins/Default-Day/exit2.png
+  /usr/share/roadnav/skins/Default-Day/getdirections.png
+  /usr/share/roadnav/skins/Default-Day/getdirections2.png
+  /usr/share/roadnav/skins/Default-Day/headingbox.png
+  /usr/share/roadnav/skins/Default-Day/locationbox.png
+  /usr/share/roadnav/skins/Default-Day/lowerbarbackground.png
+  /usr/share/roadnav/skins/Default-Day/maptracksgps.png
+  /usr/share/roadnav/skins/Default-Day/maptracksgps2.png
+  /usr/share/roadnav/skins/Default-Day/preferences.png
+  /usr/share/roadnav/skins/Default-Day/preferences2.png
+  /usr/share/roadnav/skins/Default-Day/setaddress.png
+  /usr/share/roadnav/skins/Default-Day/setaddress2.png
+  /usr/share/roadnav/skins/Default-Day/sidebarbackground.png
+  /usr/share/roadnav/skins/Default-Day/skin.xml
+  /usr/share/roadnav/skins/Default-Day/speedbox.png
+  /usr/share/roadnav/skins/Default-Day/template.psd
+  /usr/share/roadnav/skins/Default-Day/template2.psd
+  /usr/share/roadnav/skins/Default-Day/textstatustemplate.psd
+  /usr/share/roadnav/skins/Default-Day/textstatustemplate2.psd
+  /usr/share/roadnav/skins/Default-Day/zoom0a.png
+  /usr/share/roadnav/skins/Default-Day/zoom0d.png
+  /usr/share/roadnav/skins/Default-Day/zoom0u.png
+  /usr/share/roadnav/skins/Default-Day/zoom10a.png
+  /usr/share/roadnav/skins/Default-Day/zoom10d.png
+  /usr/share/roadnav/skins/Default-Day/zoom10u.png
+  /usr/share/roadnav/skins/Default-Day/zoom11a.png
+  /usr/share/roadnav/skins/Default-Day/zoom11d.png
+  /usr/share/roadnav/skins/Default-Day/zoom11u.png
+  /usr/share/roadnav/skins/Default-Day/zoom12a.png
+  /usr/share/roadnav/skins/Default-Day/zoom12d.png
+  /usr/share/roadnav/skins/Default-Day/zoom12u.png
+  /usr/share/roadnav/skins/Default-Day/zoom13a.png
+  /usr/share/roadnav/skins/Default-Day/zoom13d.png
+  /usr/share/roadnav/skins/Default-Day/zoom13u.png
+  /usr/share/roadnav/skins/Default-Day/zoom14a.png
+  /usr/share/roadnav/skins/Default-Day/zoom14d.png
+  /usr/share/roadnav/skins/Default-Day/zoom14u.png
+  /usr/share/roadnav/skins/Default-Day/zoom1a.png
+  /usr/share/roadnav/skins/Default-Day/zoom1d.png
+  /usr/share/roadnav/skins/Default-Day/zoom1u.png
+  /usr/share/roadnav/skins/Default-Day/zoom2a.png
+  /usr/share/roadnav/skins/Default-Day/zoom2d.png
+  /usr/share/roadnav/skins/Default-Day/zoom2u.png
+  /usr/share/roadnav/skins/Default-Day/zoom3a.png
+  /usr/share/roadnav/skins/Default-Day/zoom3d.png
+  /usr/share/roadnav/skins/Default-Day/zoom3u.png
+  /usr/share/roadnav/skins/Default-Day/zoom4a.png
+  /usr/share/roadnav/skins/Default-Day/zoom4d.png
+  /usr/share/roadnav/skins/Default-Day/zoom4u.png
+  /usr/share/roadnav/skins/Default-Day/zoom5a.png
+  /usr/share/roadnav/skins/Default-Day/zoom5d.png
+  /usr/share/roadnav/skins/Default-Day/zoom5u.png
+  /usr/share/roadnav/skins/Default-Day/zoom6a.png
+  /usr/share/roadnav/skins/Default-Day/zoom6d.png
+  /usr/share/roadnav/skins/Default-Day/zoom6u.png
+  /usr/share/roadnav/skins/Default-Day/zoom7a.png
+  /usr/share/roadnav/skins/Default-Day/zoom7d.png
+  /usr/share/roadnav/skins/Default-Day/zoom7u.png
+  /usr/share/roadnav/skins/Default-Day/zoom8a.png
+  /usr/share/roadnav/skins/Default-Day/zoom8d.png
+  /usr/share/roadnav/skins/Default-Day/zoom8u.png
+  /usr/share/roadnav/skins/Default-Day/zoom9a.png
+  /usr/share/roadnav/skins/Default-Day/zoom9d.png
+  /usr/share/roadnav/skins/Default-Day/zoom9u.png
+  /usr/share/roadnav/skins/Default-Day/zoomin.png
+  /usr/share/roadnav/skins/Default-Day/zoomin2.png
+  /usr/share/roadnav/skins/Default-Day/zoomout.png
+  /usr/share/roadnav/skins/Default-Day/zoomout2.png
+  /usr/share/roadnav/skins/Default-Night/exit.png
+  /usr/share/roadnav/skins/Default-Night/exit2.png
+  /usr/share/roadnav/skins/Default-Night/getdirections.png
+  /usr/share/roadnav/skins/Default-Night/getdirections2.png
+  /usr/share/roadnav/skins/Default-Night/headingbox.png
+  /usr/share/roadnav/skins/Default-Night/locationbox.png
+  /usr/share/roadnav/skins/Default-Night/lowerbarbackground.png
+  /usr/share/roadnav/skins/Default-Night/maptracksgps.png
+  /usr/share/roadnav/skins/Default-Night/maptracksgps2.png
+  /usr/share/roadnav/skins/Default-Night/preferences.png
+  /usr/share/roadnav/skins/Default-Night/preferences2.png
+  /usr/share/roadnav/skins/Default-Night/setaddress.png
+  /usr/share/roadnav/skins/Default-Night/setaddress2.png
+  /usr/share/roadnav/skins/Default-Night/sidebarbackground.png
+  /usr/share/roadnav/skins/Default-Night/skin.xml
+  /usr/share/roadnav/skins/Default-Night/speedbox.png
+  /usr/share/roadnav/skins/Default-Night/template.psd
+  /usr/share/roadnav/skins/Default-Night/template2.psd
+  /usr/share/roadnav/skins/Default-Night/textstatustemplate.psd
+  /usr/share/roadnav/skins/Default-Night/textstatustemplate2.psd
+  /usr/share/roadnav/skins/Default-Night/zoom0a.png
+  /usr/share/roadnav/skins/Default-Night/zoom0d.png
+  /usr/share/roadnav/skins/Default-Night/zoom0u.png
+  /usr/share/roadnav/skins/Default-Night/zoom10a.png
+  /usr/share/roadnav/skins/Default-Night/zoom10d.png
+  /usr/share/roadnav/skins/Default-Night/zoom10u.png
+  /usr/share/roadnav/skins/Default-Night/zoom11a.png
+  /usr/share/roadnav/skins/Default-Night/zoom11d.png
+  /usr/share/roadnav/skins/Default-Night/zoom11u.png
+  /usr/share/roadnav/skins/Default-Night/zoom12a.png
+  /usr/share/roadnav/skins/Default-Night/zoom12d.png
+  /usr/share/roadnav/skins/Default-Night/zoom12u.png
+  /usr/share/roadnav/skins/Default-Night/zoom13a.png
+  /usr/share/roadnav/skins/Default-Night/zoom13d.png
+  /usr/share/roadnav/skins/Default-Night/zoom13u.png
+  /usr/share/roadnav/skins/Default-Night/zoom14a.png
+  /usr/share/roadnav/skins/Default-Night/zoom14d.png
+  /usr/share/roadnav/skins/Default-Night/zoom14u.png
+  /usr/share/roadnav/skins/Default-Night/zoom1a.png
+  /usr/share/roadnav/skins/Default-Night/zoom1d.png
+  /usr/share/roadnav/skins/Default-Night/zoom1u.png
+  /usr/share/roadnav/skins/Default-Night/zoom2a.png
+  /usr/share/roadnav/skins/Default-Night/zoom2d.png
+  /usr/share/roadnav/skins/Default-Night/zoom2u.png
+  /usr/share/roadnav/skins/Default-Night/zoom3a.png
+  /usr/share/roadnav/skins/Default-Night/zoom3d.png
+  /usr/share/roadnav/skins/Default-Night/zoom3u.png
+  /usr/share/roadnav/skins/Default-Night/zoom4a.png
+  /usr/share/roadnav/skins/Default-Night/zoom4d.png
+  /usr/share/roadnav/skins/Default-Night/zoom4u.png
+  /usr/share/roadnav/skins/Default-Night/zoom5a.png
+  /usr/share/roadnav/skins/Default-Night/zoom5d.png
+  /usr/share/roadnav/skins/Default-Night/zoom5u.png
+  /usr/share/roadnav/skins/Default-Night/zoom6a.png
+  /usr/share/roadnav/skins/Default-Night/zoom6d.png
+  /usr/share/roadnav/skins/Default-Night/zoom6u.png
+  /usr/share/roadnav/skins/Default-Night/zoom7a.png
+  /usr/share/roadnav/skins/Default-Night/zoom7d.png
+  /usr/share/roadnav/skins/Default-Night/zoom7u.png
+  /usr/share/roadnav/skins/Default-Night/zoom8a.png
+  /usr/share/roadnav/skins/Default-Night/zoom8d.png
+  /usr/share/roadnav/skins/Default-Night/zoom8u.png
+  /usr/share/roadnav/skins/Default-Night/zoom9a.png
+  /usr/share/roadnav/skins/Default-Night/zoom9d.png
+  /usr/share/roadnav/skins/Default-Night/zoom9u.png
+  /usr/share/roadnav/skins/Default-Night/zoomin.png
+  /usr/share/roadnav/skins/Default-Night/zoomin2.png
+  /usr/share/roadnav/skins/Default-Night/zoomout.png
+  /usr/share/roadnav/skins/Default-Night/zoomout2.png
+  /usr/share/roadnav/states.tdf
+  /usr/share/roadnav/zips.tdf
+
+------------------
+
+Port Notes:
+
+----- version 0.19-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

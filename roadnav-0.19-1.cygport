@@ -1,0 +1,9 @@
+WX_VERSION=2.6
+WX_TOOLKIT=gtk2
+inherit wxwidgets
+
+DESCRIPTION="Street navigation program"
+HOMEPAGE="http://roadnav.sourceforge.net"
+SRC_URI="mirror://sourceforge/roadnav/${P}.tar.gz"
+
+CYGCONF_ARGS="--with-wx-config=${WX_CONFIG}"
