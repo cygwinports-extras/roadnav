@@ -1,5 +1,5 @@
 category: Net
-requires: cygwin wx26-base wx26-gtk2
+requires: wx26-base wx26-gtk2
 sdesc: "Street navigation program"
 ldesc: "Roadnav is an open source street navigation solution capable of 
 running on a variety of operating systems. Roadnav uses the free 
