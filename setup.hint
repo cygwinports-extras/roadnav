@@ -1,5 +1,5 @@
 category: Net
-requires: wx26-base wx26-gtk2
+requires: libgcc1 libstdc++6 libwx_baseu2.8_0 libwx_gtk2u2.8_0
 sdesc: "Street navigation program"
 ldesc: "Roadnav is an open source street navigation solution capable of 
 running on a variety of operating systems. Roadnav uses the free 

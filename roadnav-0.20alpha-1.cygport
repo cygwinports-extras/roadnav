@@ -1,0 +1,33 @@
+WX_VERSION=2.8
+inherit wxwidgets
+
+DESCRIPTION="Street navigation program"
+HOMEPAGE="http://roadnav.sourceforge.net"
+#SRC_URI="mirror://sourceforge/roadnav/${P}.tar.gz
+#         mirror://sourceforge/roadnav/lib${P}.tar.gz"
+SRC_URI="http://roadnav.sourceforge.net/prerel/${P}.tar.gz
+         http://roadnav.sourceforge.net/prerel/lib${P}.tar.gz"
+
+CYGCONF_ARGS="--with-wx-config=${WX_CONFIG}"
+
+src_compile() {
+	mkdir -p ${B}/libroadnav
+	cd ${B}/libroadnav
+	lndirs ${S%/*}/lib${P} .
+	CYGCONF_SOURCE=. \
+	cygconf
+	cygmake -C src
+
+	cd ${B}
+	CPPFLAGS+=" -I${B}/libroadnav/include"
+	LDFLAGS+=" -L${B}/libroadnav/src"
+	cygconf
+	cygmake
+}
+
+src_install() {
+	cd ${B}
+	cyginstall
+	domenu ${S}/roadnav.desktop
+	newicon ${S}/src/appicon48.png roadnav.png
+}
