@@ -1,12 +1,24 @@
 WX_VERSION=2.8
 inherit wxwidgets
 
-DESCRIPTION="Street navigation program"
+NAME="roadnav"
+VERSION=0.20alpha
+RELEASE=1
+CATEGORY="Net"
+SUMMARY="Street navigation program"
+DESCRIPTION="Roadnav is an open source street navigation solution capable of
+running on a variety of operating systems. Roadnav uses the free TIGER/Line
+(Topologically Integrated Geographic Encoding and Referencing) files from the
+US Census Bureau to build the maps, along with the GNIS state and topical
+gazetteer data from the USGS to identify locations. It has experimental support
+for scripting, LCDproc, importing OpenStreetMap data, and importing GPX
+waypoints and tracks."
 HOMEPAGE="http://roadnav.sourceforge.net"
 #SRC_URI="mirror://sourceforge/roadnav/${P}.tar.gz
 #         mirror://sourceforge/roadnav/lib${P}.tar.gz"
 SRC_URI="http://roadnav.sourceforge.net/prerel/${P}.tar.gz
          http://roadnav.sourceforge.net/prerel/lib${P}.tar.gz"
+PATCH_URI="0.20-wx-config.patch"
 
 CYGCONF_ARGS="--with-wx-config=${WX_CONFIG}"
 

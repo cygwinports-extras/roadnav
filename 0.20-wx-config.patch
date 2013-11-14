@@ -1,0 +1,9 @@
+--- origsrc/roadnav-0.20alpha/src/Makefile.am	2008-06-08 19:12:58.000000000 -0500
++++ src/roadnav-0.20alpha/src/Makefile.am	2013-11-14 00:02:29.025259700 -0600
+@@ -1,5 +1,5 @@
+ .rc.o:
+-	`wx-config --rescomp` $^ -o $@
++	`$(WX_CONFIG_PATH) --rescomp` $^ -o $@
+ 
+ INCLUDES = \
+ 	$(WX_CXXFLAGS)
